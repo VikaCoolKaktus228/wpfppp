@@ -106,5 +106,18 @@ namespace wpfppp.Pages
         {
             AppFrame.MainFrame.Navigate(new Authorization());
         }
+
+        private void JoinClubButton_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedclub = ListClubs.SelectedItems.Cast<Clubs>().ToList();
+            if (selectedclub.Count > 0)
+            {
+                AppFrame.MainFrame.Navigate(new AboutClub((sender as Button).DataContext as Clubs));
+            }
+            else
+            {
+                MessageBox.Show("выберите клуб!");
+            }
+        }
     }
 }

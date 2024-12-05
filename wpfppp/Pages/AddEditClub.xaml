@@ -8,7 +8,19 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AddEditClub">
 
-    <Grid>
-        
+    <Grid Background="White">
+        <Label Content="Добавить/Изменить клуб" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="AddEditButton" Content="Сохранить" HorizontalAlignment="Left" Margin="648,336,0,0" VerticalAlignment="Top" Background="#FFA9F5A7" Foreground="#FF104E13" FontFamily="Arial" FontSize="16" Width="126" Height="46" Click="AddEditButton_Click"/>
+        <Label Content="Введите название клуба" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial"/>
+        <Label Content="Введите описание клуба" HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial"/>
+        <Label Content="Выберите тип клуба" HorizontalAlignment="Left" Margin="270,64,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial"/>
+        <Label Content="Выберите директора клуба" HorizontalAlignment="Left" Margin="270,141,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial"/>
+        <TextBox x:Name="ClubNameTb" HorizontalAlignment="Left" Margin="10,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="23"/>
+        <TextBox x:Name="lubDescriptionTb" HorizontalAlignment="Left" Margin="11,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219" Height="128"/>
+        <TextBox x:Name="LocationTb" HorizontalAlignment="Left" Margin="11,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" Height="54"/>
+        <ComboBox x:Name="DirectorCombo" HorizontalAlignment="Left" Margin="282,174,0,0" VerticalAlignment="Top" Width="188"/>
+        <ComboBox x:Name="ClubTypeCombo" HorizontalAlignment="Left" Margin="282,98,0,0" VerticalAlignment="Top" Width="188"/>
+        <Label Content="Введите адес клуба" HorizontalAlignment="Left" Margin="11,315,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial"/>
+
     </Grid>
 </Page>

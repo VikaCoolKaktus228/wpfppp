@@ -14,7 +14,7 @@
         <Label x:Name="ClubDirector" Content="Label" HorizontalAlignment="Left" Margin="10,127,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="18"/>
         <Label x:Name="ClubTypelab" Content="Label" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="18"/>
         <Label x:Name="ClubDescription" Content="Label" HorizontalAlignment="Left" Margin="10,199,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="18" Height="119" Width="141"/>
-        <ListView x:Name="ListClubs" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="254,127,426,101" ScrollViewer.HorizontalScrollBarVisibility="Hidden" FontFamily="Arial">
+        <ListView x:Name="ListEvents" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="254,127,370,101" ScrollViewer.HorizontalScrollBarVisibility="Hidden" FontFamily="Arial">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid Height="79" Width="76">
@@ -22,14 +22,15 @@
                             <ColumnDefinition Width="134"/>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Column="1">
-                            <TextBlock><Run Text="{Binding ClubName}" FontWeight="Bold" FontFamily="Arial"/></TextBlock>
+                            <TextBlock><Run Text="{Binding EventName}" FontWeight="Bold" FontFamily="Arial"/></TextBlock>
                         </StackPanel>
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
         <Label Content="Занятия в клубе" HorizontalAlignment="Left" Margin="254,79,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="22"/>
-        <Button x:Name="JoinClub" Content="Хочу вступить!" HorizontalAlignment="Left" Margin="589,199,0,0" VerticalAlignment="Top" Height="83" Width="172" Background="#FFB8FFB2" FontSize="20" FontFamily="Arial"/>
+        <Button x:Name="JoinClub" Content="Хочу вступить!" HorizontalAlignment="Left" Margin="589,199,0,0" VerticalAlignment="Top" Height="83" Width="172" Background="#FFB8FFB2" FontSize="20" FontFamily="Arial" Click="JoinClub_Click"/>
+        <Label x:Name="ClubAdress" Content="Label" HorizontalAlignment="Left" Margin="10,390,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="18" Width="266" Height="50"/>
 
     </Grid>
 </Page>

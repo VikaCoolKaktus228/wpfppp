@@ -37,7 +37,7 @@
                             </TextBlock>
                         </StackPanel>
                         <StackPanel Grid.Column="2">
-                            <Button x:Name="JoinClubButton" Height="50" Width="150" Content="Присоединиться к клубу" Background="#FFBDFBC4" FontFamily="Arial"/>
+                            <Button x:Name="JoinClubButton" Height="50" Width="150" Content="Присоединиться к клубу" Background="#FFBDFBC4" FontFamily="Arial" Click="JoinClubButton_Click"/>
                         </StackPanel>
                     </Grid>
                 </DataTemplate>
